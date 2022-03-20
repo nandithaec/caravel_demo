@@ -4,9 +4,17 @@
 
 | :exclamation: Important Note            |
 |-----------------------------------------|
+We design a 2-D systolic array architecture as shown in teh figure. Each node is a Processing ELement (PE) which takes in 3 inputs and produces an output. Each PE shifts the data of horizontally and vertically to the neighboring PEs every clock cycle. Systolic arrays access the memory only once, and all the PEs transfer the data to the nearby PEs, thus reducing the memory access.
+Specification:
+5 horizontal inputs and 5 vertical inputs
+5 diagonal inputs
+All 15 inputs are given the same input in our design
+Each input is 8 bits wide
+Clock: 100MHz
+Outputs: 5, which are 8 bits wide
+Operation being performed: Multiplication and Accumulation at each PE
 
-## Please fill in your project documentation in this README.md file 
+Put a waveform diagram:
 
-Refer to [README](docs/source/quickstart.rst) for a quick start of how to use caravel_user_project
+Put a layout diagram:
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
